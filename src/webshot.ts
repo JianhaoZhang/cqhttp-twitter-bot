@@ -21,7 +21,7 @@ class Webshot extends CallableInstance {
 
   constructor(onready?: () => any) {
     super('webshot');
-    puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox', '--lang=zh-CN,zh']})
+    puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox', '--lang=ja,zh-CN,zh,en']})
       .then(browser => this.browser = browser)
       .then(() => {
         logger.info('launched puppeteer browser');

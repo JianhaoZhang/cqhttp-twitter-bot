@@ -104,7 +104,7 @@ export default class {
         if (match) {
           config = {
             screen_name: match[1],
-            exclude_replies: false,
+            exclude_replies: true,
             tweet_mode: 'extended',
           };
           endpoint = 'statuses/user_timeline';
